@@ -1,18 +1,19 @@
 import React from 'react';
 import AdditionalFeature from './AdditionalFeature';
 
-const AdditionalFeatures = props => {
+const AdditionalFeatures = () => {
   return (
     <div className="content">
       <h4>Additional Features</h4>
-      {props.additionalFeatures.length ? (
+      {AdditionalFeatures.length ? (
         <ol type="1">
-          {props.additionalFeatures.map(item => (
-            <AdditionalFeature key={item.id} feature={item} />
+          {AdditionalFeatures.map(item => (
+            <AdditionalFeature key={item.id} feature={item}  />
           ))}
-        </ol>
+        </ol> 
       ) : (
         <p>Nice looking car!</p>
+        
       )}
     </div>
   );
